@@ -409,7 +409,7 @@
     font-size: 15px;
     font-family: "Cal Sans", sans-serif;
     text-transform: capitalize;
-    
+
 }
 
 .boxanim .dot {
@@ -453,6 +453,7 @@
     }
 
 }
+
 .boxanim .dot2 {
     animation: dot 4s linear 2s infinite;
     height: 10px;
@@ -590,6 +591,67 @@
         font-size: 12px;
     }
 
+
+
+    .boxanim {
+        position: relative;
+        top: 50px;
+        left: 20%;
+        padding: 20px;
+        height: 30px;
+        width: 200px;
+        border: 2px solid #000;
+        border-radius: 10px;
+    }
+
+    .boxanim h3 {
+        font-size: 10px;
+        font-family: "Cal Sans", sans-serif;
+        text-transform: capitalize;
+
+    }
+
+    .boxanim .dot {
+        animation: dot 4s linear infinite;
+        height: 10px;
+        background-color: goldenrod;
+        width: 10px;
+        border: 1px solid #000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+    }
+
+
+
+    @keyframes dot {
+        0% {
+            left: 0;
+            top: 0;
+        }
+
+        25% {
+            left: 220px;
+            top: 0;
+        }
+
+        50% {
+            left: 220px;
+            top: 60px;
+        }
+
+        75% {
+            left: 0;
+            top: 60px;
+        }
+
+        100% {
+            top: 0;
+            left: 0;
+        }
+
+    }
 }
 
 
@@ -597,7 +659,7 @@
 
 
 
-@media (max-width: 1024px) and (min-width: 800px) {
+@media (max-width: 1280px) and (min-width: 799px) {
     .content {
         margin-left: 170px;
         gap: 10px;
@@ -606,9 +668,9 @@
 
     .searchbar {
         margin-top: -40px;
-        margin-left: 73%;
+        margin-left: 0%;
         height: 40px;
-        width: 220px;
+        width: 180px;
     }
 
     .content1 {
@@ -725,8 +787,7 @@
 
 /* for desktop */
 
-
-@media (max-width:2000px) and (min-width: 1024px) {
+@media (max-width:2000px) and (min-width: 1280px) {
     .content {
         margin-left: 180px;
         gap: 40px;
@@ -735,9 +796,9 @@
 
     .searchbar {
         margin-top: -40px;
-        margin-left: 60%;
+        margin-left: 70%;
         height: 40px;
-        width: 400px;
+        width: 350px;
     }
 
     .content1 {
